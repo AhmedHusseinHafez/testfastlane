@@ -25,10 +25,13 @@ jobs:
           distribution: 'temurin' # Use the Eclipse Temurin distribution
           java-version: '17'
 
-      - name: Install Flutter Version 3.24.5
+      - name: Install Flutter stable channel
         uses: subosito/flutter-action@v2
+        id: flutter-action
         with:
-          flutter-version: '3.24.5' # Use the required Flutter version
+          channel: stable
+          flutter-version: '3.38.3'
+          cache: true
 
       - name: Install Dependencies
         run: flutter pub get
