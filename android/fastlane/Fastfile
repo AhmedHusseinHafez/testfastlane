@@ -28,7 +28,6 @@ platform :android do
       android_artifact_path: "../build/app/outputs/flutter-apk/app-release.apk",
       android_artifact_type: "APK",
       debug: true
-
     )
 
   end
